@@ -1,0 +1,22 @@
+#board {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+}
+
+.count {
+    display: flex;
+    justify-content: center;
+}
+
+.boardArea {
+    display: flex;
+    justify-content: center;
+}
+
+.canvas {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
