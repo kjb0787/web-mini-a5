@@ -4,7 +4,6 @@ import './Board.css'
 import { useSelector } from 'react-redux';
 
 export default function Board() {
-    const clickCount = useSelector((state) => state.clickCount)
     const boardState = useSelector((state) => state.game)
 
     const boardComponent = [];
@@ -18,8 +17,6 @@ export default function Board() {
             boardComponent.push((<Square symbol={boardState[i][j]} x={i} y={j} />))
         }
     }
-
-
 
     return (
         <div class="canvas">
